@@ -1,0 +1,33 @@
+
+<html>
+    <head>
+        <title>ERP Login</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="icon" href="./assests/EASE_icon.png" type="image/gif" sizes="16x16">
+    </head>
+    <body>
+        <div class="loginbox">
+            <img src="./assests/avatar.png" class="avatar">
+            <h1>Login Here</h1>
+            <form method="post" action="login.php">
+                
+
+                <p>Username</p>
+                <input type="text" name="username" placeholder="Enter Username" required>
+                <p>Password</p>
+                <input type="password" name="password" placeholder="Enter Password" required>
+                <div class="radio_container">
+                    <input type="radio" name="designation" value="admin" required />
+                    <label for="admin">Admin</label>
+
+                    <input type="radio" name="designation" value="faculty" required />
+                    <label for="faculty">Faculty</label>
+
+                    <input type="radio" name="designation" value="student" required />
+                    <label for="student">Student</label>
+                </div>
+                <button type="submit" name = "submit" value="Login">Login</button>
+            </form>
+        </div>
+    </body>
+</html>
