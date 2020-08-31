@@ -1,8 +1,7 @@
-
-<html>
+<html lang = "en">
     <head>
         <title>ERP Login</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="./stylesSheet/styles.css">
         <link rel="icon" href="./assests/EASE_icon.png" type="image/gif" sizes="16x16">
     </head>
     <body>
@@ -11,11 +10,10 @@
             <h1>Login Here</h1>
             <form method="post" action="login.php">
                 
-
                 <p>Username</p>
-                <input type="text" name="username" placeholder="Enter Username" required>
+                <input type="text" class="form-control" name="username" placeholder="Enter Username" required>
                 <p>Password</p>
-                <input type="password" name="password" placeholder="Enter Password" required>
+                <input type="password" class="form-control" name="password" placeholder="Enter Password" required>
                 <div class="radio_container">
                     <input type="radio" name="designation" value="admin" required />
                     <label for="admin">Admin</label>
@@ -26,7 +24,7 @@
                     <input type="radio" name="designation" value="student" required />
                     <label for="student">Student</label>
                 </div>
-                <button type="submit" name = "submit" value="Login">Login</button>
+                <button class = "btn btn-lg btn-primary btn-block" type="submit" name = "submit" value="Login">Login</button>
             </form>
         </div>
     </body>
